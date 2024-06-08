@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video</title>
+<!--    <style>-->
+<!--        body{-->
+<!--            color:white;-->
+<!--            margin:0px;-->
+<!--            padding:0px;-->
+<!--        }-->
+<!--        header.feature-box.top{-->
+<!--        background-color:black;-->
+<!--        height:100px;-->
+<!--        margin:0px;-->
+<!--        padding:20px;-->
+<!--        text-align:center;-->
+<!--        }-->
+<!--        header.feature-box.second{-->
+<!--        background-color:blue;-->
+<!--        height:50px;-->
+<!--        text-align:center;-->
+<!--        margin-top:-25px;-->
+<!--        }-->
+<!--        .features{-->
+<!--          background-color:black;-->
+<!--          width: 900px;-->
+<!--          height: 700px;-->
+<!--          border-radius: 35px;-->
+<!--          object-fit: contain;-->
+<!--          margin:20px;-->
+<!--        }-->
+<!--        section.col-sm{-->
+<!--          background-color:black;-->
+<!--          width: 1000px;-->
+<!--          height: 650px;-->
+<!--          border-radius: 35px;-->
+<!--          object-fit: contain;-->
+<!--          margin:40px;-->
+<!--        }-->
+
+<!--        img{-->
+<!--          width: 900px;-->
+<!--          height: 600px;-->
+<!--          border-radius: 35px;-->
+<!--          object-fit: contain;-->
+<!--          margin:40px;-->
+<!--        }-->
+
+<!--        .new{-->
+<!--        color:black;-->
+<!--        margin:0px;-->
+<!--        padding:10px;-->
+<!--        background-color:green;-->
+<!--        margin:0px;-->
+<!--        margin-top:-10px;-->
+<!--        }-->
+<!--    </style>-->
+</head>
+<body>
+<header class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">SafeRide</span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-white" href="/home">Home</a>
+      <a class="mr-5 hover:text-white" href="/FrontPage">video</a>
+      <a class="mr-5 hover:text-white" href="/webcam">live webcam</a>
+    </nav>
+  </div>
+</header>
+<!--HERO SECTION-->
+ <div class="flex justify-center ">
+                                            <div class="flex flex-col justify-center">
+
+                                                <div class="flex flex-col max-w-7xl justify-center items-center p-2 mt-10">
+                                                    <div class="flex flex-col w-[90%] md:w-3/4 text-center items-center justify-center space-y-3">
+                                                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Live Webcam Monitoring</h1>
+                                                        <div class="text-xl font-semibold text-gray-400 ">
+                                                            Experience heightened security with our live webcam feature. Monitor your surroundings in real-time, detecting potential threats swiftly and effectively.
+                                                        </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+  <section class="col-sm " >
+          <img src="{{ url_for('webapp') }}"   alt="Upload video">
+
+  </section>
+
+</body>
+</html>
